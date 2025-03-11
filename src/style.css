@@ -1,0 +1,26 @@
+:root{
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+
+    --primary-color: #415a77;
+    --secondary-color: #778da9;
+    --third-color: #e0e1dd;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "nav main";
+    height: 100vh;
+    background-color: var(--third-color);
+    border-radius: 20px;
+}
+
+nav{
+    grid-area: nav;
+    background-color: var(--primary-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
